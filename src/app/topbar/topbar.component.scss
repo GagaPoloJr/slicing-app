@@ -1,25 +1,13 @@
-  
-//   input[type="text"] {
-//     border: solid 1px var(--secondary);
-//     padding: 10px;
-//     border-radius: 8px;
-//     margin-right: 4px;
-//     display: inline-block;
-//     width: 30%;
-//   }
+// Import Google Material Icons stylesheet
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
-  // Import Google Material Icons stylesheet
-@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+.topbar {
+  display: flex;
 
-
-.topbar{
+  &__right {
     display: flex;
-
-    &__right{
-        display: flex;
-    }
+  }
 }
-// Your custom styling
 .form-container {
   display: flex;
   align-items: center;
@@ -27,11 +15,10 @@
 
 .input-container {
   position: relative;
-  
 }
 
 .search-input {
-  padding-right: 2.5rem; 
+  padding-right: 2.5rem;
   width: auto;
   padding: 10px 20px;
   color: var(--secondary);
@@ -41,38 +28,35 @@
 
 .search-icon {
   position: absolute;
-  color: var(--red-bg);;
+  color: var(--red-bg);
   top: 50%;
   width: 20px;
-  right: 0.75rem; // Adjust the position as needed
+  right: 0.75rem;
   transform: translateY(-50%);
   cursor: pointer;
 }
 
-
-
 .upload-container {
-    display: flex;
-    align-items: center;
-  }
-  
-  .upload-icon {
-    width: 1px;
-    z-index: 10;
-    color: var(--red-bg);
-   
-  }
-  
-  .file-input {
-    display: none; // Hide the default file input
-  }
-  
-  .upload-btn {
-    cursor: pointer;
-    padding: 0.5rem 1rem;
-    padding-left: 2rem;
-    border: 1px solid var(--primary);
-    border-radius: 4px;
-    background-color: var(--primary);
-    color: #333;
-  }
+  display: flex;
+  align-items: center;
+}
+
+.upload-icon {
+  width: 1px;
+  z-index: 10;
+  color: var(--red-bg);
+}
+
+.file-input {
+  display: none;
+}
+
+.upload-btn {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  padding-left: 2rem;
+  border: 1px solid var(--primary);
+  border-radius: 4px;
+  background-color: var(--primary);
+  color: #333;
+}

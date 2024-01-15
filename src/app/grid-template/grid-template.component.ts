@@ -12,8 +12,8 @@ import { DocumentService } from '../document.service';
   styleUrl: './grid-template.component.scss',
 })
 export class GridTemplateComponent {
-  @Input() apiEndpoint: string | undefined; // Input property to accept API endpoint
-  @ContentChild('itemTemplate') itemTemplate!: TemplateRef<any>; // Use non-null assertion operator
+  @Input() apiEndpoint: string | undefined; 
+  @ContentChild('itemTemplate') itemTemplate!: TemplateRef<any>;
 
   items: any[] = [];
 
@@ -38,7 +38,6 @@ export class GridTemplateComponent {
       case 'documents':
         this.items = await this.documentService.getDocumentItems();
         break;
-      // Add more cases for other API endpoints if needed
     }
 
     console.log('Items:', this.items);
