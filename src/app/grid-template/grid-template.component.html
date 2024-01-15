@@ -1,0 +1,11 @@
+<div class="grid-container">
+    <div class="header">
+      <span>{{ apiEndpoint }}</span> more {{ apiEndpoint }}
+    </div>
+    <div *ngFor="let item of items" [ngClass]="'item item' + item.id">
+      <ng-container
+        *ngTemplateOutlet="itemTemplate; context: { item: item }"
+      ></ng-container>
+    </div>
+    <div class="item item6">Additional Content</div>
+  </div>

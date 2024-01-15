@@ -1,1 +1,126 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root{
+  --red-bg:#943e46;
+  --primary: #f4e3cf;
+  --secondary: #943e46;
+}
+body {
+  background-color: var(--red-bg);
+  color: var(--primary);
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+}
+
+main {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+ul {
+  padding-inline-start: unset;
+}
+
+// .grid-container {
+//     display: grid;
+//     grid-template-areas:
+//       "item1 item1 item2"
+//       "item1 item1 item3"
+//       "item4 item5 item6";
+//     grid-template-columns: repeat(3, 1fr); // Assuming 4 columns in total
+//     grid-template-rows: repeat(3, auto); // Assuming 3 rows in total
+//     gap: 10px; // Adjust the gap as needed
+//   }
+
+//   .item {
+//     padding: 100px;
+//     border: 1px solid #ccc;
+//   }
+
+//   .item1 {
+//     grid-area: item1;
+//     grid-row: span 2; // Takes 2 rows
+//     grid-column: span 2; // Takes 2 columns
+//   }
+
+//   .item2 {
+//     grid-area: item2;
+//   }
+
+//   .item3 {
+//     grid-area: item3;
+//   }
+
+//   .item4 {
+//     grid-area: item4;
+//   }
+
+//   .item5 {
+//     grid-area: item5;
+//   }
+
+// .grid-container {
+//   display: grid;
+//   grid-template-areas:
+//     "header header item10"
+//     "item1 item1 item2"
+//     "item1 item1 item3"
+//     "item4 item5 item6";
+//   grid-template-columns: auto 1fr 1fr; // Adjust column widths as needed
+//   grid-template-rows: repeat(3, auto);
+//   gap: 10px;
+// }
+
+// .header {
+//   grid-area: header;
+//   grid-column: span 2;
+
+  
+//     display: flex;
+//     justify-content: space-between;
+// }
+
+
+
+// .item {
+//   padding: 100px;
+//   border: 1px solid #ccc;
+// }
+
+// .item1 {
+//   grid-area: item1;
+//   grid-row: span 2;
+//   grid-column: span 2;
+// }
+
+// .item2 {
+//   grid-area: item2;
+// }
+
+// .item3 {
+//   grid-area: item3;
+// }
+
+// .item4 {
+//   grid-area: item4;
+// }
+
+// .item5 {
+//   grid-area: item5;
+// }
+
+// .item6 {
+//   grid-area: item6;
+// }
+
+
+
+.test{
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

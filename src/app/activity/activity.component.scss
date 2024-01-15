@@ -1,0 +1,35 @@
+.activity {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  &__content {
+    display: flex;
+    align-items: center;
+
+    &-cards {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      &--image {
+        width: 100px;
+        height: 80px;
+        background-color: var(--primary);
+      }
+      &--status {
+        margin: 5px;
+        max-width: 200px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      &--badge {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+      }
+    }
+  }
+
+  // activity__content-cards--badge
+}

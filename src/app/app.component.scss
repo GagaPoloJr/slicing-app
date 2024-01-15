@@ -1,0 +1,51 @@
+$red-backgorund: #943e46;
+$primary: #f4e3cf;
+$secondary: #943e46;
+
+
+.page {
+    display: grid;
+    width: 100%;
+    gap: 20px;
+    grid-template-areas:
+      "video"
+      "activity"
+      "people"
+      "channel"
+      "document"
+;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+
+    @media screen and (min-width: 768px) {
+      grid-template-areas:
+      "video activity"
+      "video  activity"
+      "people  channel"
+      "document channel"
+;
+ grid-template-rows: 2fr 1fr;
+    grid-template-columns: 2fr 1fr;
+    }
+  }
+
+  .page > .video {
+    grid-area: video;
+  }
+
+  .page > .people {
+    grid-area: people;
+  }
+
+  .page > .document {
+    grid-area: document;
+  }
+  
+  .page > .activity {
+    grid-area: activity;
+  }
+  
+  .page > .channel {
+    grid-area: channel;
+    background-color: #8cffa0;
+  }

@@ -1,0 +1,23 @@
+$red-backgorund: #943e46;
+$primary: #f4e3cf;
+$secondary: #943e46;
+
+.navbar {
+  &__wrapper {
+    display: flex;
+    border-top: 1px solid $primary;
+    border-bottom: 1px solid $primary;
+    padding:20px 0;
+    // gap: 20px;
+
+   
+  }
+
+  &__item {
+    display: inline-block;
+    &:not(:last-child)::after {
+      content: "/";
+      margin: -5px 10px;
+    }
+  }
+}
